@@ -53,7 +53,7 @@ class UserController extends Controller
                         break;
                     }
 
-                    if ($image->likes->summary->total_count > 1) {
+                    if ($image->likes->summary->total_count > 10) {
                         Image::create(['user_id' => $user->id, 'path' => $image->picture]);
                         $count++;
                     }

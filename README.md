@@ -21,7 +21,16 @@
     - FACEBOOK_CLIENT_ID=
     - FACEBOOK_CLIENT_SECRET=
     
-5. Run below commands from root folder (need to install composer locally)
+5. You need to create https tunnel using ngrok for the local setup. 
+    - **[Ngrok Download](https://ngrok.com/download)**
+   
+6. Set the .env file APP_URL after creating https tunnel.
+    - ex : APP_URL=https://eeba-112-134-110-212.ngrok.io
+    
+7. Run below commands from root folder (need to install composer locally)
     - composer install
     - php artisan migration
     - php artisan serve
+    
+8. Then you can navigate to app **[here](http://127.0.0.1:8000)**
+    - http://127.0.0.1:8000

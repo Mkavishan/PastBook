@@ -33,8 +33,6 @@ return [
     'facebook' => [
         'client_id' => env('FACEBOOK_CLIENT_ID'),
         'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
-        'redirect' => 'https://98e4-112-134-107-51.ngrok.io/auth/callback',
-//        'redirect' => 'https://example.com/callback-url','https://f337-112-134-109-106.ngrok.io/'
+        'redirect' => env('APP_URL') . '/auth/callback',
     ],
-
 ];
