@@ -41,5 +41,4 @@ Route::prefix('images')->middleware('auth')->group(function () {
 /**
  * Dashboard loading.
  */
-Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'view']);
-//Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'view'])->middleware('auth');
+Route::get('/dashboard', [\App\Http\Controllers\DashboardController::class, 'view'])->middleware('auth');
